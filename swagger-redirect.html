@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Splitter API - Swagger Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .description {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .features {
+            margin-top: 40px;
+            text-align: left;
+        }
+        .features h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .features li:before {
+            content: "✅ ";
+            margin-right: 10px;
+        }
+        .status {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(76, 175, 80, 0.2);
+            border-radius: 10px;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍕 Order Splitter API</h1>
+        <div class="description">
+            Welcome to the Order Splitter API! This is a powerful backend system for splitting orders with taxes and services among friends.
+        </div>
+        
+        <a href="/api-docs" class="button">🚀 Open Swagger Documentation</a>
+        
+        <div class="features">
+            <h3>✨ Features Available:</h3>
+            <ul>
+                <li>Create order splitting sessions with unique IDs</li>
+                <li>Upload bill images for reference</li>
+                <li>Add friends with their individual orders</li>
+                <li>Automatic calculation of taxes, service charges, and delivery fees</li>
+                <li>Track payment status (InstaPay vs Cash)</li>
+                <li>Generate detailed session summaries</li>
+                <li>Interactive API testing through Swagger UI</li>
+            </ul>
+        </div>
+        
+        <div class="status">
+            <strong>🟢 Server Status:</strong> Running on http://localhost:3000
+        </div>
+    </div>
+    
+    <script>
+        // Auto-redirect after 5 seconds
+        setTimeout(() => {
+            window.location.href = '/api-docs';
+        }, 5000);
+    </script>
+</body>
+</html>
+
