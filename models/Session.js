@@ -138,7 +138,8 @@ sessionSchema.pre('save', function(next) {
 
 // Virtual for session link
 sessionSchema.virtual('sessionLink').get(function() {
-  return `${process.env.BASE_URL || 'http://localhost:3000'}/session/${this.sessionId}`;
+  const frontendUrl = process.env.FRONTEND_URL || process.env.BASE_URL || 'http://localhost:3000';
+  return `${frontendUrl}/session/${this.sessionId}`;
 });
 
 // Method to calculate friend's total amount
